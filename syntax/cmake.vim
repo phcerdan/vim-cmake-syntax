@@ -358,6 +358,10 @@ syn keyword cmakeCommandDeprecated
             \ build_name exec_program export_library_dependencies install_files install_programs install_targets link_libraries make_directory output_required_files remove subdir_depends subdirs use_mangled_mesa utility_source variable_requires write_file
             \ nextgroup=cmakeArguments
 
+syn keyword cmakeCommandITK
+            \ itk_add_test itk_python_expression_add_test
+            \ nextgroup=cmakeArguments
+
 syn case match
 
 syn keyword cmakeTodo
@@ -370,6 +374,7 @@ hi def link cmakeCommand Function
 hi def link cmakeCommandConditional Conditional
 hi def link cmakeCommandDeprecated WarningMsg
 hi def link cmakeCommandRepeat Repeat
+hi def link cmakeCommandITK Function
 hi def link cmakeComment Comment
 hi def link cmakeEnvironment Special
 hi def link cmakeEscaped Special
