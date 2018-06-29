@@ -3615,6 +3615,10 @@ syn keyword cmakeCommandDeprecated
             \ write_file
             \ nextgroup=cmakeArguments
 
+syn keyword cmakeCommandITK
+            \ itk_add_test itk_python_expression_add_test
+            \ nextgroup=cmakeArguments
+
 syn case match
 
 syn keyword cmakeTodo
@@ -3627,6 +3631,7 @@ hi def link cmakeCommand Function
 hi def link cmakeCommandConditional Conditional
 hi def link cmakeCommandDeprecated WarningMsg
 hi def link cmakeCommandRepeat Repeat
+hi def link cmakeCommandITK Function
 hi def link cmakeComment Comment
 hi def link cmakeEnvironment Special
 hi def link cmakeEscaped Special
